@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template app-example-page__wrapper flexbox no-flexboxtweener">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alert Frequency – Example - GOV.UK Design System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href=https://design-system.service.gov.uk/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="https://design-system.service.gov.uk/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" href="https://design-system.service.gov.uk/assets/images/govuk-apple-touch-icon.png">
+
+
+
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="og:title" content="Radios with conditionally revealing content">
+    <meta name="description" content="">
+    <meta name="og:description" content="">
+    <link rel="canonical" href="https://design-system.service.gov.uk/components/radios/conditional-reveal/">
+
+    <link href="https://design-system.service.gov.uk/stylesheets/main-e01bb82f4defa056a14ef3fb34da8e44.css" rel="stylesheet" media="all">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://design-system.service.gov.uk//javascripts/head-ie8-b99b69269f5de4f330c1834f40d45566.js"></script>
+  <![endif]-->
+    <script src="https://design-system.service.gov.uk/javascripts/vendor/modernizr.js"></script>
+
+
+
+    <meta property="og:image" content="https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png">
+</head>
+
+<body class="govuk-template__body app-example-page js-enabled">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+
+
+
+
+
+
+    <!-- Disable browser validation for any examples that include form elements -->
+    <form action="https://design-system.service.gov.uk/form-handler" method="post" novalidate="">
+
+
+
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">How often would you like to receive your alert?</h1>
+                </legend>
+                <div id="contact-hint" class="govuk-hint">
+                    Select one option.
+                </div>
+                <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email"
+                            aria-controls="conditional-contact" aria-expanded="false">
+                        <label class="govuk-label govuk-radios__label" for="contact">
+                            Daily
+                        </label>
+                    </div>
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="sort">
+                                Which day would you like it delivered? </label>
+                            <select class="govuk-select" id="sort" name="sort">
+                                <option value="published">Monday</option>
+                                <option value="updated" >Tuesday</option>
+                                <option value="views">Wednesday</option>
+                                <option value="comments">Thursday</option>
+                                <option value="comments">Friday</option>
+                                <option value="comments">Saturday</option>
+                                <option value="comments">Sunday</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone"
+                            aria-controls="conditional-contact-2" aria-expanded="false">
+                        <label class="govuk-label govuk-radios__label" for="contact-2">
+                            Every 3 days
+                        </label>
+                    </div>
+                    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="sort">
+                                Which day would you like it delivered? </label>
+                            <select class="govuk-select" id="sort" name="sort">
+                                <option value="published">Monday</option>
+                                <option value="updated" >Tuesday</option>
+                                <option value="views">Wednesday</option>
+                                <option value="comments">Thursday</option>
+                                <option value="comments">Friday</option>
+                                <option value="comments">Saturday</option>
+                                <option value="comments">Sunday</option>
+                            </select>
+                        </div>
+
+
+
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text"
+                            aria-controls="conditional-contact-3" aria-expanded="true">
+                        <label class="govuk-label govuk-radios__label" for="contact-3">
+                            Weekly
+                        </label>
+                    </div>
+                    <div class="govuk-radios__conditional" id="conditional-contact-3">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="sort">
+                                Which day would you like it delivered? </label>
+                            <select class="govuk-select" id="sort" name="sort">
+                                <option value="published">Monday</option>
+                                <option value="updated" >Tuesday</option>
+                                <option value="views">Wednesday</option>
+                                <option value="comments">Thursday</option>
+                                <option value="comments">Friday</option>
+                                <option value="comments">Saturday</option>
+                                <option value="comments">Sunday</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+
+
+
+    </form>
+
+
+
+
+
+    <script src="https://design-system.service.gov.uk/javascripts/vendor/iframeResizer.contentWindow.js"></script>
+    <script src="https://design-system.service.gov.uk/javascripts/govuk-frontend-4f559c8876d65ed24e986adbf702b813.js"></script>
+    <script src="https://design-system.service.gov.uk/javascripts/example-9c3169e4fadb985206ba331be236abd9.js"></script>
+
+
+
+</body>
+
+</html>
